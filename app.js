@@ -55,8 +55,9 @@ client.subscribe('status/timer/set');
 
 setInterval(async()=>{
   let status=await readDhT();
-
+  console.log(status)
   let rawdata = fs.readFileSync('config.json');
+  console.log(JSON.parse(rawdata))
   let configData= JSON.parse(rawdata);
   
   let response=JSON.stringify({...status,water:configData.status});
