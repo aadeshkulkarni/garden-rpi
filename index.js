@@ -1,3 +1,12 @@
+/* 
+*
+*
+*      This is legacy code - Not used anymore
+*      Only app.js and rpi.js is working code.
+*
+*
+*/
+
 const express = require('express')
 const cors = require('cors')
 const {readInput,write,readDhT,readMoisture}=require('./rpi');
